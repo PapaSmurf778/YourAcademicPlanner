@@ -12,17 +12,17 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #1c1c1c; /* Dark background */
-            color: #fff;
+            background-color: #E4F1F6; /* Light blue background */
+            color: #333;
             line-height: 1.6;
         }
 
         header {
-            background-color: #FF6347; /* Vibrant Red */
+            background-color: #007BFF; /* Main Blue */
             color: #fff;
             padding: 50px 0;
             text-align: center;
-            border-bottom: 4px solid #c54b3a;
+            border-bottom: 4px solid #0056b3;
         }
 
         header img {
@@ -38,7 +38,7 @@
         nav {
             display: flex;
             justify-content: center;
-            background-color: #1c1c1c;
+            background-color: #0056b3;
             padding: 15px 0;
         }
 
@@ -59,8 +59,9 @@
         .hero {
             text-align: center;
             padding: 100px 20px;
-            background-color: #444;
-            border-bottom: 3px solid #555;
+            background-color: #007BFF; /* Main Blue */
+            color: #fff;
+            border-bottom: 3px solid #0056b3;
         }
 
         .hero h1 {
@@ -80,7 +81,7 @@
         /* Who Are We Section */
         .who-are-we {
             padding: 60px 20px;
-            background-color: #333; /* Dark grey */
+            background-color: #e1f4fd; /* Light blue */
             text-align: center;
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -88,38 +89,14 @@
         }
 
         .who-are-we h2 {
-            color: #FFD700; /* Gold */
+            color: #007BFF; /* Main Blue */
             margin-bottom: 30px;
             font-size: 36px;
         }
 
         .who-are-we p {
             font-size: 18px;
-            color: #ddd;
-            max-width: 800px;
-            margin: 0 auto 40px;
-            line-height: 1.6;
-        }
-
-        /* Why People Should Choose Us Section */
-        .why-choose-us {
-            padding: 60px 20px;
-            background-color: #444; /* Dark grey */
-            text-align: center;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            margin: 20px 0;
-        }
-
-        .why-choose-us h2 {
-            color: #FFD700; /* Gold */
-            margin-bottom: 30px;
-            font-size: 36px;
-        }
-
-        .why-choose-us p {
-            font-size: 18px;
-            color: #ddd;
+            color: #333;
             max-width: 800px;
             margin: 0 auto;
             line-height: 1.6;
@@ -132,14 +109,14 @@
             gap: 20px;
             padding: 40px;
             text-align: center;
-            background-color: #333;
+            background-color: #e4f1f6;
         }
 
         .feature {
-            background-color: #444;
+            background-color: #ffffff;
             padding: 30px;
             border-radius: 15px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
@@ -150,13 +127,13 @@
 
         .feature h3 {
             font-size: 22px;
-            color: #FFD700;
+            color: #007BFF;
             margin-bottom: 10px;
         }
 
         .feature p {
             font-size: 16px;
-            color: #ddd;
+            color: #666;
             max-width: 300px;
             margin: 0 auto;
             line-height: 1.5;
@@ -164,7 +141,55 @@
 
         .feature:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Why People Should Choose Us Section */
+        .why-choose-us {
+            padding: 60px 20px;
+            background-color: #e1f4fd; /* Light blue */
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            margin: 20px 0;
+        }
+
+        .why-choose-us h2 {
+            color: #007BFF; /* Main Blue */
+            margin-bottom: 30px;
+            font-size: 36px;
+        }
+
+        .why-choose-us p {
+            font-size: 18px;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .why-choose-us ul {
+            text-align: left;
+            margin: 0 auto;
+            font-size: 18px;
+            max-width: 800px;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .why-choose-us ul li {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .why-choose-us ul li:before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #007BFF;
+            font-size: 24px;
         }
 
         /* Call-to-Action Section */
@@ -183,7 +208,7 @@
         }
 
         .cta a {
-            background-color: #FF6347; /* Vibrant Red */
+            background-color: #007BFF; /* Main Blue */
             color: #fff;
             padding: 15px 25px;
             font-size: 20px;
@@ -193,14 +218,14 @@
         }
 
         .cta a:hover {
-            background-color: #c54b3a; /* Slightly darker red */
+            background-color: #0056b3; /* Darker blue */
         }
 
         /* Footer Section */
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #333;
+            background-color: #007BFF; /* Main Blue */
             color: #fff;
             border-top-left-radius: 40px;
             border-top-right-radius: 40px;
@@ -237,19 +262,6 @@
         <p>We are a team of driven individuals who understand the challenges that students face when balancing academics, extracurriculars, and personal life. We created YAP with the intention to simplify students' lives, giving them a tool that not only organizes their schedules but also motivates them to excel in all areas of life. YAP is designed to provide students with the resources and structure they need to stay on top of their coursework while freeing up time for their passions and goals.</p>
     </section>
 
-    <!-- Why Choose Us Section -->
-    <section id="why-choose-us" class="why-choose-us">
-        <h2>Why People Should Choose Us</h2>
-        <p>YAP isn’t just another planner—it's your personal academic assistant, built to help you succeed. We go beyond basic scheduling by offering:</p>
-        <ul>
-            <li><strong>Customizability:</strong> Tailor the planner to fit your exact needs, whether you're balancing multiple extracurriculars, working part-time, or simply managing a heavy class load.</li>
-            <li><strong>Automation:</strong> The automatic grade calculator and assignment tracker help you stay on top of your coursework without constantly worrying about deadlines and grades.</li>
-            <li><strong>User-Friendly Interface:</strong> Our intuitive design ensures that using the planner is both easy and enjoyable, minimizing time spent on administration and maximizing your productivity.</li>
-            <li><strong>Real-Time Updates:</strong> Stay updated on assignments, deadlines, and grades, allowing you to plan ahead and make adjustments as needed.</li>
-            <li><strong>Support:</strong> We’re not just offering a product; we’re offering a partnership. Our team is dedicated to helping you optimize your planner for maximum productivity and success.</li>
-        </ul>
-    </section>
-
     <!-- Features Section -->
     <section id="features" class="features">
         <div class="feature">
@@ -267,6 +279,18 @@
             <h3>Grade Calculator</h3>
             <p>Calculate your grade automatically, so you can focus on what matters most: learning.</p>
         </div>
+    </section>
+
+    <!-- Why People Should Choose Us Section -->
+    <section id="why-choose-us" class="why-choose-us">
+        <h2>Why People Should Choose Us</h2>
+        <p>We're not just offering a product; we’re offering a partnership. Our team is dedicated to helping you optimize your planner for maximum productivity and success.</p>
+        <ul>
+            <li>Easy-to-use interface that saves you time.</li>
+            <li>Customizable features that adapt to your needs.</li>
+            <li>Comprehensive support to make sure you stay on track.</li>
+            <li>Affordable pricing that fits any budget.</li>
+        </ul>
     </section>
 
     <!-- Call to Action Section -->
