@@ -25,13 +25,6 @@
             border-bottom: 4px solid #005cbf;
         }
 
-        header img {
-            max-width: 180px;  /* Adjust logo size */
-            margin: 0 auto; /* Center the logo */
-            display: block;
-            border-radius: 10px; /* Rounded corners */
-        }
-
         header h1 {
             font-size: 36px;
             margin: 10px 0;
@@ -107,7 +100,7 @@
         /* Features Section */
         .features {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust grid for smaller images */
             gap: 20px;
             padding: 40px;
             text-align: center;
@@ -123,7 +116,7 @@
         }
 
         .feature img {
-            max-width: 100%; /* Ensure images are fluid */
+            max-width: 80%; /* Reduced size of feature images */
             height: auto;
             margin-bottom: 15px;
             border-radius: 10px;
@@ -243,7 +236,6 @@
 
 <body>
     <header>
-        <img src="Logo.png" alt="Your Academic Planner Logo">
         <h1>Your Academic Planner (YAP)</h1>
     </header>
     <nav>
@@ -282,6 +274,16 @@
             <img src="Grade%20Calculator%20Image.avif" alt="Grade Calculator">
             <h3>Grade Calculator</h3>
             <p>Automate grade tracking with our easy-to-use grade calculator.</p>
+        </div>
+        <div class="feature">
+            <img src="Extracurriculars%20Image.avif" alt="Extracurriculars">
+            <h3>Extracurricular Tracker</h3>
+            <p>Stay on top of your extracurricular activities with a dedicated tracker for each activity.</p>
+        </div>
+        <div class="feature">
+            <img src="Automatic%20Notifications%20Image.avif" alt="Automatic Notifications">
+            <h3>Automatic Notifications</h3>
+            <p>Receive timely reminders for all your important assignments, deadlines, and events.</p>
         </div>
     </section>
 
