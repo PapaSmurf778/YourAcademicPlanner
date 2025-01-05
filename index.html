@@ -5,129 +5,179 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Academic Planner (YAP)</title>
     <style>
+        /* General Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background: #f5f5f5;
+            color: #333;
         }
 
+        /* Header Section */
         header {
-            background-color: #004080;
-            color: #fff;
-            padding: 20px 0;
+            background: linear-gradient(135deg, #004080, #0066cc);
+            color: white;
             text-align: center;
+            padding: 40px 20px;
         }
 
         header img {
-            max-width: 150px;
-            margin: 10px 0;
+            max-width: 120px;
+            margin-bottom: 10px;
         }
 
+        header h1 {
+            font-size: 32px;
+            margin: 0;
+        }
+
+        /* Navigation */
         nav {
             display: flex;
             justify-content: center;
             background-color: #003366;
-            padding: 10px;
+            padding: 12px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         nav a {
             color: #fff;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 20px;
             font-size: 18px;
+            font-weight: 500;
         }
 
         nav a:hover {
+            color: #ff6600;
             text-decoration: underline;
         }
 
+        /* Hero Section */
         .hero {
+            background: url('hero-background.jpg') no-repeat center center/cover;
+            color: white;
             text-align: center;
-            padding: 50px 20px;
-            background: #e6f2ff;
+            padding: 100px 20px;
         }
 
         .hero h1 {
-            font-size: 36px;
-            color: #004080;
+            font-size: 48px;
+            margin: 0;
+            letter-spacing: 1px;
         }
 
         .hero p {
-            font-size: 18px;
-            color: #333;
-            max-width: 600px;
-            margin: 0 auto;
+            font-size: 20px;
+            margin-top: 20px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
+        /* Features Section */
         .features {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 40px;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 60px 20px;
+            background: #ffffff;
             text-align: center;
-            background-color: #fff;
         }
 
         .feature {
-            background-color: #f9f9f9;
-            padding: 20px;
+            background-color: #f8f8f8;
+            padding: 25px;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
 
         .feature img {
-            max-width: 80px;
+            width: 80px;
             margin-bottom: 15px;
         }
 
         .feature h3 {
-            font-size: 20px;
+            font-size: 22px;
             color: #004080;
+            margin-bottom: 10px;
         }
 
+        .feature p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Call-to-Action Section */
         .cta {
+            background: #ff6600;
+            color: white;
+            padding: 60px 20px;
             text-align: center;
-            padding: 50px 20px;
-            background: #e6f2ff;
+            border-radius: 10px;
+            margin: 40px 0;
+        }
+
+        .cta h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
         }
 
         .cta a {
-            background-color: #004080;
-            color: #fff;
-            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #ff6600;
+            padding: 15px 30px;
             text-decoration: none;
             font-size: 18px;
-            border-radius: 5px;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         .cta a:hover {
-            background-color: #003366;
+            background-color: #ff4d00;
+            transform: translateY(-5px);
         }
 
+        /* Footer */
         footer {
-            text-align: center;
-            padding: 20px;
             background-color: #003366;
-            color: #fff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
         }
 
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        /* Why Choose Us Section */
         .why-choose-us {
-            padding: 40px;
-            background-color: #fff;
+            padding: 60px 20px;
+            background-color: #ffffff;
             text-align: center;
         }
 
         .why-choose-us h2 {
+            font-size: 36px;
             color: #004080;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
 
         .why-choose-us p {
             font-size: 18px;
             color: #333;
-            max-width: 700px;
-            margin: 0 auto 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
         }
     </style>
 </head>
